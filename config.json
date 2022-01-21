@@ -1,0 +1,21 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/codingthunder",
+    "prod_uri": "mysql://root:@localhost/codingthunder",
+    "fb_url": "https://www.facebook.com/prakalp.pande.7",
+    "tw_url": "https://twitter.com",
+    "gh_url": "https://github.com/PRAKALP-PANDE",
+    "blog_name": "Code_With_Prakalp",
+    "tag_line": "Heaven for programmers",
+    "gmail-user": "pratham9740@gmail.com",
+    "gmail-password": "Pratham#974",
+    "about_text": "Hello i am prakalp and this is about us section.",
+    "no_of_posts": 2,
+    "login_image": "login.svg",
+    "admin_user": "prakalp",
+    "admin_password": "pande",
+    "upload_location": "C:\\Users\\Prakalp\\PycharmProjects\\Flask_projects\\static"
+  }
+}

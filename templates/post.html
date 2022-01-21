@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        {% set fname = 'assets/img/' + post.img_file %}
+        <header class="masthead" style="background-image: url('{{ url_for('static', filename=fname) }}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>{{post.title}}</h1>
+                            <h2 class="subheading">{{post.tagline}}</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Admin</a>
+                                on {{post.date}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        {{post.content}}
+
+                        <!-- I've comment it down because in future there is chance that i will use this placeholder. -->
+                        <!-- <p>
+                            Placeholder text by
+                            <a href="http://spaceipsum.com/">Space Ipsum</a>
+                            &middot; Images by
+                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </article>
+
+{% endblock %}
